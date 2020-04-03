@@ -1,25 +1,81 @@
 {% include "html/_document-header.html" %}
 
 <div class="workspace">
-  <div class="workspace__cont">
+    <div class="workspace__cont">
 
 
-    <div class="workspace__header">
-      {% include "html/header.html" %}
+        <div class="workspace__header">
+            {% include "html/header.html" %}
+        </div>
+        <main class="workspace__content">
+            <div class="first-screen">
+                <div class="first-screen__wrap">
+                    <div class="first-screen__row">
+                        <div class="first-screen__column first-screen__column--poligon-top-left">
+                            <img src="img/first-1.png" alt="">
+                            <div class="first-scren__column-content">
+                                <p>Внутрішні системи</p>
+                                <a href="#" class="first-screen__column__link">
+                                    Дивитися ще
+                                    <span class="arrow-right">
+                                    <i></i>
+                                  </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="first-screen__column first-screen__column--mini">
+                            <img src="img/first-2.png" alt="">
+                            <div class="first-scren__column-content">
+
+                                <p>Зовнішні системи</p>
+                                <a href="#" class="first-screen__column__link">
+                                    Дивитися ще
+                                    <span class="arrow-right">
+                                    <i></i>
+                                  </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="first-screen__column first-screen__column--mini first-screen__column--poligon-bottom-right">
+                            <img src="img/first-3.png" alt="">
+                            <div class="first-scren__column-content">
+                                <p>Автоматика</p>
+                                <a href="#" class="first-screen__column__link">
+                                    Дивитися ще
+                                    <span class="arrow-right">
+                                    <i></i>
+                                  </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__row">
+                    <div class="portfolio__row-wrap">
+                        <div class="portfolio__row-element">
+                            <i class="portfolio__element-icon"></i>
+                            <p>Портфоліо</p>
+                        </div>
+                        <div class="portfolio__row-element">
+                            <i class="portfolio__element-icon"></i>
+                            <p>Контакти</p>
+                        </div>
+                        <div class="portfolio__row-element">
+                            <i class="portfolio__element-icon"></i>
+                            <p>Співпраця</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="workspace__footer">
+            {% include "html/footer.html" %}
+        </div>
+
+
     </div>
-
-
-    <main class="workspace__content">
-      test
-    </main>
-
-
-    <div class="workspace__footer">
-      {% include "html/footer.html" %}
-    </div>
-
-
-  </div>
 </div>
 
 {% include "html/_document-footer.html" %}
