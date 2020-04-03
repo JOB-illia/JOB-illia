@@ -1,9 +1,34 @@
+@charset "UTF-8";
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@media (max-width: 1920px) {
+  body {
+    zoom: 1; } }
+
+@media (max-width: 1800px) {
+  body {
+    zoom: 0.94; } }
+
+@media (max-width: 1600px) {
+  body {
+    zoom: 0.835; } }
+
+@media (max-width: 1500px) {
+  body {
+    zoom: 0.75; } }
+
+@media (max-width: 1200px) {
+  body {
+    zoom: 0.7; } }
+
+@media (max-width: 1000px) {
+  zoom: 1; }
+
 html, body {
-  font-family: Arial, sans-serif; }
+  font-family: "Montserrat", sans-serif, sans-serif; }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: normal;
   line-height: 1.3;
   color: #000; }
@@ -38,3 +63,63 @@ html {
     max-width: 100%;
     width: 100%;
     height: auto !important; }
+
+.header .header__wrap {
+  display: block;
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 320px; }
+  .header .header__wrap .header__row {
+    padding: 6px 0 24px;
+    border-bottom: 1px solid #f6f6f6; }
+    .header .header__wrap .header__row .header__contact {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap; }
+      .header .header__wrap .header__row .header__contact > p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        line-height: 15px;
+        color: #000;
+        font-weight: 400;
+        margin-right: 41px; }
+        .header .header__wrap .header__row .header__contact > p .header__contact-icon {
+          width: 12px;
+          height: 15px;
+          background: transparent url("../i/point.png") center center no-repeat;
+          background-size: 100% auto;
+          margin-right: 15px;
+          display: block; }
+      .header .header__wrap .header__row .header__contact a {
+        text-decoration: none;
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        line-height: 15px;
+        color: #000;
+        font-weight: 400;
+        margin-right: 41px; }
+        .header .header__wrap .header__row .header__contact a .header__contact-icon {
+          width: 15px;
+          height: 11px;
+          background: transparent url("../i/messang.png") center center no-repeat;
+          background-size: 100% auto;
+          display: block;
+          margin-right: 14px; }
+        .header .header__wrap .header__row .header__contact a:nth-child(3) .header__contact-icon {
+          width: 15px;
+          height: 15px;
+          background: transparent url("../i/phone.png") center center no-repeat;
+          background-size: 100% auto; }
+        .header .header__wrap .header__row .header__contact a:nth-child(4) .header__contact-icon {
+          width: 18px;
+          height: 19px;
+          background: transparent url("../i/viber.png") center center no-repeat;
+          background-size: 100% auto; }

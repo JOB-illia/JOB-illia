@@ -1,0 +1,51 @@
+.header{
+  .header__wrap{
+    @include container($mW: 1600px);
+    .header__row{
+      padding: 6px 0 24px;
+      border-bottom: 1px solid #f6f6f6;
+      .header__contact{
+        @include flc-start();
+        > p {
+          @include flc-start();
+          .header__contact-icon{
+            @include icon($w: 12px, $h: 15px, $image: 'point.png');
+            margin-right: 15px;
+            display: block;
+          }
+          font-size: rem(15);
+          line-height: 15px;
+          color: $c-black;
+          font-weight: 400;
+          margin-right: 41px;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          @include flc-start();
+          .header__contact-icon{
+            @include icon($w: 15px, $h: 11px, $image: 'messang.png');
+            display: block;
+            margin-right: 14px;
+          }
+          font-size: rem(15);
+          line-height: 15px;
+          color: $c-black;
+          font-weight: 400;
+          margin-right: 41px;
+          &:nth-child(3){
+            .header__contact-icon {
+              @include icon($w: 15px, $h: 15px, $image: 'phone.png');
+            }
+          }
+          &:nth-child(4){
+            .header__contact-icon {
+              @include icon($w: 18px, $h: 19px, $image: 'viber.png');
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

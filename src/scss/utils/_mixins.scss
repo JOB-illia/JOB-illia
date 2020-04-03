@@ -140,11 +140,10 @@
   height: $size + px;
 }
 
-@mixin container {
+@mixin container($mW) {
   display: block;
   margin: 0 auto;
-
-  max-width: 1170px;
+  max-width: $mW;
   min-width: 320px;
 }
 
@@ -334,4 +333,34 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 1920px) {
+  body {
+    zoom: 1;
+  }
+}
+@media(max-width: 1800px){
+  body {
+    zoom: 0.94;
+  }
+}
+@media(max-width: 1600px){
+  body {
+    zoom: 0.835;
+  }
+}
+
+@media(max-width: 1500px){
+  body {
+    zoom: 0.75;
+  }
+}
+@media(max-width: 1200px){
+  body {
+    zoom: 0.7;
+  }
+}
+@media(max-width: 1000px){
+  body {}
+  zoom: 1;
 }
