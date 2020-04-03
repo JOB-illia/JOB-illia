@@ -1,0 +1,106 @@
+.over-work {
+  @include container($mW: $wrap-content);
+  padding: 0 15px;
+
+  .over-work__title {
+    @include flc-start();
+    margin-top: 80px;
+    margin-left: -4px;
+    margin-bottom: 46px;
+
+    > h2 {
+      font-size: rem(44);
+      line-height: rem(28);
+      color: $c-black;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+    }
+
+    .link-default--black {
+      margin: 0 0 0 265px;
+
+    }
+  }
+
+  .over-work__row {
+    @include flc-center-center();
+    align-items: stretch;
+
+    .over-work__column-row {
+      flex-basis: 1170px;
+
+      .over-work__row-column {
+        @include space-between();
+        align-items: stretch;
+        margin-bottom: 30px;
+        .over-work__row-column-element{
+          flex-basis: 312px;
+          img {
+            @include adapt-img();
+          }
+        }
+        .over-work__row-column-element--big {
+          flex-basis: 830px;
+        }
+
+      }
+      .over-work__row-column--inverted {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .over-work__row-column--left {
+    flex-basis: 402px;
+    margin-right: 19px;
+    img {
+      @include adapt-img();
+    }
+  }
+}
+@include mmax($width: 1208){
+  .over-work .over-work__row-column--left{
+    margin-right: -10px;
+  }
+}
+@include mmax($width: 1216){
+
+  .over-work .over-work__row .over-work__column-row {
+    flex-basis: 73.1%;
+  }
+  .over-work .over-work__row-column--left{
+    flex-basis: 25.1%;
+    margin-right: 15px;
+  }
+}
+@include mmax($width: 1132){
+  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element{
+    flex-basis: 26.6%;
+  }
+  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element--big{
+    flex-basis: 70.6%;
+  }
+
+}
+
+
+@include mmax($width: 1132){
+  .over-work .over-work__title .link-default--black {
+    margin: 0 0 0 10%;
+  }
+}
+@include mmax($width: 603){
+  .over-work .over-work__row-column--left{
+    flex-basis: 100%;
+    img {
+      margin: 0 auto 20px;
+      display: block;
+    }
+  }
+  .over-work .over-work__row .over-work__column-row{
+    flex-basis: 100%;
+  }
+}
+
+
+

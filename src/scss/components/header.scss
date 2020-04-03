@@ -248,7 +248,10 @@
       }
 
       .header__row-burger--open {
-        top: 10px;
+        top: 50px;
+        position: fixed;
+        bottom: auto;
+        z-index: 9999999;
 
         > i {
           @include full-abs();
@@ -285,6 +288,7 @@
 
   .header .header__wrap .header__row--bottom {
     .header__nav {
+      z-index: 9999;
       position: fixed;
       height: 100vh;
       background: #fff;
