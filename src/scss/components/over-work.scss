@@ -2,7 +2,7 @@
   @include container($mW: $wrap-content);
   padding: 0 15px;
 
-  .over-work__title {
+  &__title {
     @include flc-start();
     margin-top: 80px;
     margin-left: -4px;
@@ -34,73 +34,85 @@
         @include space-between();
         align-items: stretch;
         margin-bottom: 30px;
-        .over-work__row-column-element{
+
+        .over-work__row-column-element {
           flex-basis: 312px;
+
           img {
             @include adapt-img();
           }
         }
+
         .over-work__row-column-element--big {
           flex-basis: 830px;
         }
 
       }
+
       .over-work__row-column--inverted {
         margin-bottom: 0;
       }
     }
   }
+
   .over-work__row-column--left {
     flex-basis: 402px;
     margin-right: 19px;
+
     img {
       @include adapt-img();
     }
   }
 }
-@include mmax($width: 1208){
-  .over-work .over-work__row-column--left{
+
+@include mmax($width: 1208) {
+  .over-work .over-work__row-column--left {
     margin-right: -10px;
   }
 }
-@include mmax($width: 1216){
+
+@include mmax($width: 1216) {
 
   .over-work .over-work__row .over-work__column-row {
     flex-basis: 73.1%;
   }
-  .over-work .over-work__row-column--left{
+  .over-work .over-work__row-column--left {
     flex-basis: 25.1%;
     margin-right: 15px;
   }
 }
-@include mmax($width: 1132){
-  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element{
+
+@include mmax($width: 1132) {
+  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element {
     flex-basis: 26.6%;
   }
-  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element--big{
+  .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element--big {
     flex-basis: 70.6%;
   }
 
 }
 
 
-@include mmax($width: 1132){
+@include mmax($width: 1132) {
   .over-work .over-work__title .link-default--black {
     margin: 0 0 0 10%;
   }
 }
-@include mmax($width: 603){
-  .over-work .over-work__row-column--left{
+
+@include mmax($width: 603) {
+  .over-work .over-work__row-column--left {
     flex-basis: 100%;
+
     img {
       margin: 0 auto 20px;
       display: block;
     }
   }
-  .over-work .over-work__row .over-work__column-row{
+  .over-work .over-work__row .over-work__column-row {
     flex-basis: 100%;
   }
 }
+
 
 
 
