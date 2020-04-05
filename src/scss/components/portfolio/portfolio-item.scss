@@ -1,0 +1,34 @@
+  .portfolio__item {
+    @include container($mW: 1653px);
+    padding: 0 15px;
+    margin-top: 37px;
+    @include flc-start();
+    .portfolio__item-images {
+      flex-basis: 30.5%;
+      margin-right: 21px;
+      margin-bottom: 21px;
+      transition: .5s;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 30%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+    }
+  }
+  @include mmax($width: 554){
+    .portfolio__item {
+      @include space-between()
+    }
+    .portfolio__item .portfolio__item-images {
+      flex-basis: 46%;
+      margin-right: 0;
+    }
+  }

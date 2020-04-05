@@ -1,0 +1,22 @@
+.item-filter {
+  @include container($mW: $wrap-content);
+  padding: 0 15px;
+  @include flc-start();
+  &__item {
+    text-decoration: none;
+    padding: 9px;
+    margin-right: 38px;
+    line-height: rem(20);
+    font-weight: 500;
+    transition: .5s;
+
+    &:hover {
+      background-color: $c-default-hover;
+      color: $c-white;
+    }
+  }
+  &__item--active {
+    background-color: $c-default-hover;
+    color: $c-white;
+  }
+}
