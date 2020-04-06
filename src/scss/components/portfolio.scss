@@ -15,6 +15,15 @@
         @include flc-start();
         flex-basis: 28%;
         position: relative;
+        text-decoration: none;
+        &:hover {
+          > i {
+            transform: scale(1.1);
+          }
+          > p {
+            color: $c-default-hover;
+          }
+        }
         &::after{
           content: '';
           width: 8px;
@@ -26,18 +35,18 @@
           right: -30px;
           background: #d5d5d5;
           transform: rotate(45deg);
-
         }
         .portfolio__element-icon {
           @include icon($w: 43px, $h: 43px, $image: 'briefcase.png');
           margin-right: 25px;
-
+          transition: .5s;
         }
         > p {
           font-size: rem(22);
           font-weight: 500;
           line-height: rem(28);
           color: $c-white;
+          transition: .5s;
         }
         &:nth-child(1){
           margin-left: -50px;

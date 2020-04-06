@@ -16,6 +16,7 @@
     margin-left: 30px;
     padding: 0 100px 0 44px;
     clip-path: polygon(50% 0%, 100% 0, 100% 90%, 93% 100%, 0 100%, 0% 60%, 0 0);
+    overflow: hidden;
   }
   &__box-about-bg {
     position: absolute;
@@ -110,7 +111,7 @@
 
 }
 
-@include mmax($width: 1119) {
+@include mmax($width: 1000) {
   .column-grid {
     order: 2
   }
@@ -121,9 +122,10 @@
 
   }
 }
-@include mmax($width: 1119) {
+@include mmax($width: 1000) {
   .column-grid {
     flex-basis: 100%;
+    grid-template-columns: 50% 50%;
   }
   .about-company__box-about {
     flex-basis: 100%;
@@ -138,6 +140,11 @@
   }
   .column-grid__element-images img{
     width: 100%;
+
+  }
+  .column-grid .item-1{
+    position: relative;
+    overflow: hidden;
   }
 }
 @include mmax($width: 564){

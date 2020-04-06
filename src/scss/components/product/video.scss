@@ -1,0 +1,124 @@
+.video {
+  @include container($mW: 1600px);
+  position: relative;
+  overflow: hidden;
+  padding:  0 15px 30% 15px;
+  &:hover{
+    &::before{
+      background: rgba(0,0,0, 1);
+
+    }
+  }
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    @include full-abs();
+    background: rgba(0,0,0, 0.9);
+    transition: .5s;
+  }
+  &__bg {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center center;
+  }
+  &__container {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container--clickPlayStart {
+    opacity: 1;
+    z-index: 99;
+  }
+}
+.play {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  &:hover{
+    cursor: pointer;
+    .play-icon {
+      @include icon($w: 38px, $h: 42px, $image: 'play.svg');
+
+    }
+  }
+  .play-icon {
+    @include icon($w: 28px, $h: 32px, $image: 'play.svg');
+    display: block;
+    @include full-abs();
+    margin: auto;
+    transition: .5s;
+    left: 10px;
+  }
+
+  &::before{
+    content: '';
+    width: 71px;
+    height: 71px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 50%;
+    @include full-abs();
+    left: 0;
+    z-index: 99999;
+    margin: auto;
+    animation: pulse-anim 4s infinite;
+  }
+  &::after{
+    content: '';
+    width: 101px;
+    height: 101px;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 50%;
+    @include full-abs();
+    left: 0;
+    z-index: 99999;
+    margin: auto;
+    animation: pulse-two-anim 4s infinite;
+
+  }
+}
+@keyframes pulse-anim {
+  0%{
+    opacity: 1;
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+    opacity: .5;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+@keyframes pulse-two-anim {
+  0%{
+    opacity: 1;
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+    opacity: .5;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@include mmax($width: 541){
+  .video{
+    padding: 0 0 56% 0;
+  }
+}

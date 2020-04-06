@@ -93,7 +93,7 @@
     margin: 0;
   }
 }
-@include mmax($width: 1106){
+@include mmax($width: 1000){
   .first-screen .first-screen__wrap .first-screen__row{
     height: auto;
     .first-screen__column{

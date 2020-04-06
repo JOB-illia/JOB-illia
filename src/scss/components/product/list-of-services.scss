@@ -1,25 +1,89 @@
 .list-of-services {
   @include container($mW: $wrap-content-mini);
-  background-color: #f6f6f6;
   margin-top: 40px;
 
   &__row {
+    @include space-between();
+    padding: 43px 52px 0 39px;
+    background-color: #f6f6f6;
+    align-items: stretch;
   }
 
   &__row-column {
+    flex-basis: 168px;
+    margin-bottom: 61px;
   }
 
   &__number-item {
+    width: 35px;
+    height: 35px;
+    border: 1px solid $c-black;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    @include flc-center-center();
+    color: $c-black;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(21);
+
   }
 
   &__bottom {
+    margin-top: 20px;
+    padding: 0 15px;
+    .description-of-services__title-h2 {
+      margin: 0;
+    }
   }
 }
 
 .title-h3--list-of-services {
+  color: $c-black;
+  line-height: rem(21);
+  margin: 0 0 26px;
 }
-
+.description--list-of-services {
+  color: #737373;
+}
 .description-of-services {
+  @include container($mW: $wrap-content-mini);
+  @include space-between();
+  align-items: stretch;
+  .description-of-services--title-h2 {
+    flex-basis: 240px;
+    line-height: rem(37);
+    margin-left: -14px;
+    color: #737373;
+  }
   &__right-text {
+    flex-basis: 645px;
+    color: #737373;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.description-of-services--title-h2 {
+  color: $c-black;
+}
+@include mmax(651){
+  .description-of-services .description-of-services--title-h2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .description-of-services__right-text{
+    flex-basis: 100%;
+    text-align: center;
+
+  }
+}
+@include mmax(589){
+  .list-of-services__row-column{
+    flex-basis: 48%;
+  }
+}
+@include mmax(395){
+  .list-of-services__row-column{
+    flex-basis: 100%;
   }
 }

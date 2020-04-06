@@ -1,0 +1,111 @@
+.table {
+  @include container($mW: 1600px);
+  padding: 0 15px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  clip-path: polygon(5.5% 0, 100% 0, 100% 86%, 95% 100%, 0 100%, 0% 60%, 0 14%);
+  margin-bottom: 30px;
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,1);
+  }
+  &__bg {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .title-h2 {
+    z-index: 99;
+    position: relative;
+    margin: 39px 0 30px;
+  }
+  &__body {
+    @include container($mW: $wrap-content-mini);
+    margin-bottom: 76px;
+    position: relative;
+    z-index: 99;
+  }
+  &__header {
+    display: grid;
+    grid-template-columns: 100px 75px 140px 108px 85px 85px 85px 85px;
+    grid-auto-rows: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+  }
+  &__header-nav {
+    color: #a3a3a3;
+    font-size: rem(12);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+  &__element {
+    display: grid;
+    grid-template-columns: 100px 75px 140px 108px 85px 85px 85px 85px;
+    grid-auto-rows: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  &__element-items {
+    color: $c-white;
+    margin-top: 5px;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(37);
+    text-align: center;
+  }
+}
+@include mmax($width: 654){
+  .table{
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%, 0 0%);
+  }
+}
+@include mmax($width: 654) {
+  .table__header {
+    display: none;
+  }
+  .table {
+    &__body {
+      max-height: 400px;
+      overflow: auto;
+      position: relative;
+      padding: 0 50px;
+      &::-webkit-scrollbar { width: 4px;}
+      &::-webkit-scrollbar-track {  background-color: #999;}
+      &::-webkit-scrollbar-thumb {  background-color: #666; border-radius: 3px;}
+    }
+    &__element {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+    &__element-items {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &::before{
+        content: attr(data-title);
+        display: block;
+        color: #a3a3a3;
+      }
+    }
+  }
+}
