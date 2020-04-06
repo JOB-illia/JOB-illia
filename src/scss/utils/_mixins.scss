@@ -387,7 +387,7 @@
 .link-default {
   @include flc-start();
   text-decoration: none;
-  font-size: rem(14);
+  font-size: rem(14) !important;
   font-weight: 400;
   line-height: rem(28);
   color: $c-white;
@@ -400,6 +400,7 @@
     height: 30px;
     margin-left: 35px;
     background: $c-white;
+    font-size: 14px;
     @include flc-center-center();
     border-radius: 50%;
     transition: .5s;
@@ -411,18 +412,18 @@
   }
   &:hover {
     color: $c-default-hover;
-
     .arrow-right {
       background-color: $c-default-hover;
-
       > i {
         @include icon($w: 9px, $h: 14px, $image: 'hover-arrow-right.svg');
+        animation: hover-icon .5s forwards;
       }
     }
   }
 }
 .link-default--black {
   color: $c-black;
+  font-size: 14px!important;
   .arrow-right {
     background: $c-black;
     > i {

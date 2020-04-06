@@ -1,0 +1,25 @@
+.list-of-services {
+  @include container($mW: $wrap-content-mini);
+  background-color: #f6f6f6;
+  margin-top: 40px;
+
+  &__row {
+  }
+
+  &__row-column {
+  }
+
+  &__number-item {
+  }
+
+  &__bottom {
+  }
+}
+
+.title-h3--list-of-services {
+}
+
+.description-of-services {
+  &__right-text {
+  }
+}

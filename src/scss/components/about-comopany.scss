@@ -41,6 +41,10 @@
     z-index: 9;
     margin-left: 0;
     margin-top: 67px;
+    .arrow-right {
+      position: relative;
+      overflow: hidden;
+    }
   }
 }
 .title-h2 {
