@@ -421,6 +421,7 @@
     }
   }
 }
+
 .link-default--black {
   color: $c-black;
   font-size: 14px!important;
@@ -432,3 +433,13 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .link-default{
+    font-size: rem(20);
+  }
+}
+@media (max-width: 414px) {
+  .link-default{
+    font-size: rem(18) !important;
+  }
+}

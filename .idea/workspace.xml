@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c69917-f631-4210-aec5-935037ad2699" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/components/product/table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/product/video.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_document-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_document-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_document-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_document-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/about-comopany.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/about-comopany.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/over-work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/over-work.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/portfolio.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/product/list-of-services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product/list-of-services.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/product/product-first.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product/product-first.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/config/_default-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/config/_default-variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/utils/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/utils/_mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,7 +90,8 @@
       <workItem from="1585958375056" duration="76000" />
       <workItem from="1585981772417" duration="11326000" />
       <workItem from="1586071210762" duration="982000" />
-      <workItem from="1586072360478" duration="27636000" />
+      <workItem from="1586072360478" duration="27819000" />
+      <workItem from="1586246175515" duration="9064000" />
     </task>
     <servers />
   </component>
@@ -112,6 +116,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="271" y="150" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586100735006" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1586258936836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1586258936836" />
     <state x="376" y="191" width="837" height="582" key="find.popup" timestamp="1586187750093">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

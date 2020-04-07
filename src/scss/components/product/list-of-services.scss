@@ -66,6 +66,15 @@
 .description-of-services--title-h2 {
   color: $c-black;
 }
+@include mmax($width: 1000){
+  .title-h3--list-of-services{
+    line-height: rem(30);
+  }
+  .description-of-services__right-text{
+    font-size: rem(24);
+    line-height: rem(30);
+  }
+}
 @include mmax(651){
   .description-of-services .description-of-services--title-h2 {
     flex-basis: 100%;
@@ -82,8 +91,9 @@
     flex-basis: 48%;
   }
 }
-@include mmax(395){
+@include mmax(434){
   .list-of-services__row-column{
     flex-basis: 100%;
+    width: 100%;
   }
 }

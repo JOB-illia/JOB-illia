@@ -94,6 +94,9 @@
   }
 }
 @include mmax($width: 1000){
+  .first-screen .first-screen__wrap .first-screen__row .first-screen__column .first-scren__column-content > p{
+    font-size: rem(32);
+  }
   .first-screen .first-screen__wrap .first-screen__row{
     height: auto;
     .first-screen__column{
@@ -130,7 +133,19 @@
     }
   }
 }
-
+@media(max-width: 497px){
+  .first-screen .first-screen__wrap .first-screen__row .first-screen__column{
+    height: 492px;
+  }
+}
+@media(max-width: 497px){
+  .first-screen .first-screen__wrap .first-screen__row .first-screen__column .first-scren__column-content > p {
+    font-size: rem(28);
+  }
+  .first-screen .first-screen__wrap .first-screen__row .first-screen__column{
+    height: 450px;
+  }
+}
 @media(max-width: 425px){
   .first-screen .first-screen__wrap .first-screen__row .first-screen__column{
     height: 400px;
@@ -139,8 +154,13 @@
     height: 350px;
   }
   .first-screen .first-screen__wrap .first-screen__row .first-screen__column .first-scren__column-content > p{
-    font-size: rem(18);
+    margin-left: 10px;
   }
+  .first-screen .first-screen__wrap .first-screen__row .first-screen__column .first-scren__column-content{
+    margin: 10px;
+    height: calc(100% - 20px);
+  }
+
 }
 @media(max-width: 376px){
   .first-screen .first-screen__wrap .first-screen__row .first-screen__column {

@@ -112,6 +112,18 @@
 }
 
 @include mmax($width: 1000) {
+  .title-h3{
+    font-size: rem(26);
+    line-height: rem(30);
+  }
+  .title-h2{
+    font-size: rem(35);
+    line-height: rem(32);
+  }
+  .description{
+    font-size: rem(20);
+    line-height: rem(30);
+  }
   .column-grid {
     order: 2
   }
@@ -123,9 +135,11 @@
   }
 }
 @include mmax($width: 1000) {
+
   .column-grid {
     flex-basis: 100%;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 500px 500px;
   }
   .about-company__box-about {
     flex-basis: 100%;
@@ -146,8 +160,27 @@
     position: relative;
     overflow: hidden;
   }
+  .title-h3{
+    font-size: rem(26);
+    line-height: rem(28);
+  }
+  .title-h2 {
+    font-size: rem(30);
+    line-height: rem(32);
+  }
 }
-@include mmax($width: 564){
+@include mmax($width: 759) {
+  .column-grid{
+    grid-template-rows: auto auto;
+  }
+}
+@include mmax($width: 661){
+  .about-company__box-about .about-company__box-about-bg{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@include mmax($width: 587){
   .about-company__box-about .about-company__box-about-bg{
     height: 100%;
     width: auto;
@@ -155,7 +188,7 @@
     right: auto;
   }
 }
-@include mmax($width: 505) {
+@include mmax($width: 587) {
   .column-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

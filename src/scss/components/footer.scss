@@ -13,7 +13,7 @@
 
   }
   &__logo {
-    flex-basis: 168px;
+    flex-basis: 200px;
     margin-right: 154px;
     img {
       @include adapt-img();
@@ -82,13 +82,18 @@
     margin-right: 36px;
   }
   &__social-medical{
-    @include flc-end();
-    margin-right: 150px;
-    margin-top: 55px;
+    @include flc-start();
+    margin-top: 50px;
     > a {
-      margin-left: 39px;
+      margin-right: 29px;
+      &:hover{
+        img {
+          transform: scale(1.2);
+        }
+      }
       img {
         @include adapt-img();
+        transition: .5s;
       }
     }
   }
@@ -118,29 +123,72 @@
     align-items: stretch;
   }
 }
+@include mmax($width: 1000){
+  .footer__list-menu--description{
+    line-height: rem(35);
+  }
+  .footer__header-menu{
+    flex-basis: 320px;
+  }
+  .footer__header{
+    margin-left: 0;
+  }
+}
 @include mmax($width: 853){
   .footer__header-menu{
     flex-basis: 50%;
     margin-bottom: 30px;
   }
 }
-@include mmax($width: 552){
-  .footer__header-menu{
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
+@include mmax($width: 853){
+
   .footer__header {
     margin-left: auto;
+    text-align: center;
   }
   .footer__logo{
-    margin-bottom: 30px;
+    margin: 0 auto;
+  }
+  .footer__header-menu{
+    text-align: center;
+  }
+  .footer__header-menu--item-3 .footer__header-menu--item3 li a{
+    justify-content: center;
+  }
+  .footer__social-medical > a{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .footer__social-medical{
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .footer__footer{
+    justify-content: center;
+  }
+  .footer__copy{
+    margin-left: 0;
+    text-align: center;
+    display: block;
   }
 }
-@include mmax($width: 322){
+@include mmax($width: 425){
   .footer__copy{
     margin-left: 0;
     text-align: center;
     display: block;
     margin: 0 auto;
   }
+  .footer__social-medical{
+    margin: 30px 0 10px;
+  }
+}@include mmax($width: 425){
+  .footer__logo{
+    margin-bottom: 20px;
+  }
+
+   .footer__header-menu{
+     flex-basis: 100%;
+   }
 }

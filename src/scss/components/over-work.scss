@@ -16,6 +16,7 @@
   .over-work__row {
     @include flc-center-center();
     align-items: stretch;
+    flex-wrap: nowrap;
 
     .over-work__column-row {
       flex-basis: 1170px;
@@ -158,6 +159,9 @@
 }
 
 @include mmax($width: 603) {
+  .over-work .over-work__row{
+    flex-wrap: wrap;
+  }
   .over-work .over-work__row-column--left {
     flex-basis: 100%;
 
@@ -194,7 +198,7 @@
     }
   }
   .over-work .over-work__row .over-work__column-row .over-work__row-column .over-work__row-column-element .text-out-hover{
-    font-size: rem(18)!important;
+    font-size: rem(42)!important;
   }
 }
 
