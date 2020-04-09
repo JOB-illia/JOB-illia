@@ -143,3 +143,21 @@
     }
   }
 }
+@include mmax($width: 398){
+  .form__body{
+    padding: 0;
+  }
+  .form__body-background{
+
+    margin: 0 auto;
+    padding: 41px 15px;
+  }
+  .form__title-h2{
+    padding: 0 15px;
+    width: calc(100% - 30px);
+  }
+  .form__text-default{
+    padding: 0 15px;
+    width: calc(100% - 30px);
+  }
+}

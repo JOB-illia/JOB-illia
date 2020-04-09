@@ -361,8 +361,9 @@
   }
 }
 @media(max-width: 1000px){
-  body {}
-  zoom: 1;
+  body {
+    zoom: 1;
+  }
 }
 .btn-default{
   width: 235px;
@@ -403,6 +404,8 @@
     font-size: 14px;
     @include flc-center-center();
     border-radius: 50%;
+    position: relative;
+    overflow: hidden;
     transition: .5s;
     > i {
       @include icon($w: 9px, $h: 14px, $image: 'arrow-right.svg');
@@ -432,14 +435,26 @@
     }
   }
 }
-
+.workspace {
+  position: relative;
+  overflow: hidden;
+}
 @media (max-width: 1000px) {
   .link-default{
     font-size: rem(20);
+  }
+}
+@media(max-width: 456px){
+  .link-default .arrow-right{
+    margin-left: 10px;
   }
 }
 @media (max-width: 414px) {
   .link-default{
     font-size: rem(18) !important;
   }
+}
+
+.fancybox-container  {
+  z-index: 9999999999999999;
 }

@@ -10,5 +10,28 @@ $(document).ready(function () {
         $('.video__container iframe').attr('src', allURL);
         $('.video__container').addClass('video__container--clickPlayStart');
         $('.play, .video__bg').css('display', 'none');
-    })
+    });
+    $(window).width(function(){
+        if ($(window).width() > 979){
+            $('.main-menu__li').hover(function () {
+                $('.main-menu__a').next().css('display', 'none');
+                $(this).children('.main-menu__a').next().css('display', 'block');
+
+            }, function () {
+                $('.main-menu > li > a').next().css('display', 'none');
+            });
+            $('.main-menu__child > li > a').hover(function () {
+                $('.main-menu__child > li > a').next().css('display', 'none');
+                $(this).next().css('display', 'block');
+            });
+        } else {
+            console.log('Окно меньше 979');
+        }
+    });
+
+    $('.mobile-plus-hidden').click(function () {
+       $(this).toggleClass('mobile-plus-hidden--open');
+       $(this).parent().next().slideToggle();
+    });
+
 });

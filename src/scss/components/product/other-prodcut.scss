@@ -1,0 +1,72 @@
+.other-product{
+  @include container($mW: $wrap-content-mini);
+  margin-top: 56px;
+  padding: 0 15px;
+  .other__product--title {
+    color: $c-black;
+    font-size: rem(44);
+    font-weight: 500;
+    line-height: rem(28);
+    margin-bottom: 29px;
+  }
+  &__row {
+    @include space-between();
+  }
+
+}
+.other-product-item {
+  position: relative;
+  width: calc(263px - 15px);
+  padding-left: 15px;
+  height: 334px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &::before{
+    content: '';
+    @include full-abs();
+    background: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+  &__bg {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .link-default {
+    margin: 0 0 26px;
+    color: $c-white;
+    z-index: 9;
+    position: relative;
+    &:hover{
+      color: $c-default-hover;
+    }
+  }
+}
+.other-product-text{
+  color: $c-white;
+  z-index: 9;
+  position: relative;
+  font-size: rem(24);
+  font-weight: 500;
+  line-height: rem(28);
+}
+@include mmax($width: 527){
+  .other-product {
+    .other-product__column {
+      flex-basis: 100%;
+    }
+  }
+}
+@include mmax($width: 414){
+  .other-product .other__product--title{
+    font-size: rem(32);
+    line-height: rem(35);
+  }
+}

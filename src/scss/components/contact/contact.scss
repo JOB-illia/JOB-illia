@@ -1,0 +1,129 @@
+.contact-row {
+  @include container($mW: $wrap-content-mini);
+  padding: 0 15px;
+  @include space-between();
+  align-items: stretch;
+  margin-top: 73px;
+  &__column {
+    flex-basis: 297px;
+  }
+  &__address, &__mail {
+    @include flc-start();
+    > i {
+      margin-right: 49px;
+      transition: .5s;
+    }
+    text-decoration: none;
+    color: #191919;
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: rem(57);
+    transition: .5s;
+    &:hover{
+      color: $c-default-hover;
+      > i {
+        transform: scale(1.3);
+      }
+    }
+  }
+  &__social-media{
+    @include flc-start();
+    margin-left: 46px;
+    margin-top: 57px;
+  }
+  &__facebook{
+    margin-right: 53px;
+    transform: scale(1.3);
+    transition: .5s;
+    &:hover{
+      transform: scale(1.5);
+    }
+  }
+  &__insta {
+    transform: scale(1.3);
+    transition: .5s;
+    &:hover{
+      transform: scale(1.5);
+    }
+  }
+}
+.contact-row__column--iframe {
+  flex-basis: 566px;
+  height: 365px;
+}
+.icon-address {
+  @include icon($w: 11px, $h: 15px, $image: 'point.png');
+  display: block;
+}
+.icon-tel {
+  @include icon($w: 15px, $h: 15px, $image: 'phone.png');
+  display: block;
+}
+.icon-mail {
+  @include icon($w: 15px, $h: 11px, $image:'messang.png');
+  display: block;
+}
+.icon-viber{
+  @include icon($w: 15px, $h: 15px, $image:'viber-purple.png');
+  display: block;
+}
+.icon-facebook {
+  @include icon($w: 11px, $h: 19px, $image:'facebook.png');
+  display: block;
+}
+.icon-insta {
+  @include icon($w: 17px, $h: 16px, $image:'instagram.png');
+  display: block;
+}
+@include mmax($width: 929){
+  .contact-row__column--iframe{
+    flex-basis: 60%;
+    height: auto;
+  }
+}
+@include mmax($width: 819){
+  .contact-row__column--iframe{
+    flex-basis: 100%;
+    height: auto;
+    padding-bottom: 50%;
+    position: relative;
+    margin-top: 40px;
+    iframe {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  .contact-row__column{
+    flex-basis: 100%;
+    @include space-between();
+  }
+  .contact-row__social-media{
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .contact-row__address, .contact-row__mail{
+    flex-basis: 50%;
+  }
+}
+@include mmax($width: 688){
+  .contact-row__address, .contact-row__mail{
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}
+@include mmax($width: 416){
+  .contact-row {
+    padding: 0;
+  }
+  .contact-row__column--iframe{
+    padding-bottom: 100%;
+  }
+  .contact-row__address > i, .contact-row__mail > i{
+    margin-right: 15px;
+  }
+}

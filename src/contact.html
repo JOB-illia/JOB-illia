@@ -1,0 +1,76 @@
+{% include "html/_document-header.html" %}
+
+<div class="workspace">
+    <div class="workspace__cont">
+
+        <div class="workspace__header">
+            {% include "html/header.html" %}
+        </div>
+        <main class="workspace__content">
+            <div class="contact">
+                <div class="contact__first first-screen-default">
+                    <img src="img/contact.png" alt="" class="first-screen-default__bg">
+                    <div class="first-screen-default__container">
+                        <div class="first-screen-default__crumbs">
+                            <a href="#">Главная</a>
+                            <span>-</span>
+                            <a href="">Наши роботи</a>
+                        </div>
+                        <p class="title-h1 first-screen-default__title-h1">Контакти</p>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-row__column">
+                        <p class="contact-row__address"><i class="icon-address"></i> М. ЛЬВІВ, ПОРОХОВА 20</p>
+                        <a class="contact-row__mail" href="mailto:Аartika-office@ukr.net"><i
+                                class="icon-mail"></i>Аartika-office@ukr.net</a>
+                        <a class="contact-row__mail" href="tel:(032) 242-44-44"><i class="icon-tel"></i>(032)
+                            242-44-44</a>
+                        <a class="contact-row__mail" href="tel:(067) 765-44-44">
+                            <i class="icon-viber"></i> (067) 765-44-44 </a>
+                        <div class="contact-row__social-media">
+                            <a href="#" class="contact-row__facebook icon-facebook"></a>
+                            <a href="#" class="contact-row__insta icon-insta"></a>
+                        </div>
+                    </div>
+                    <div class="contact-row__column contact-row__column--iframe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.730705532297!2d23.986032615708904!3d49.8287263793944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae77c6ab2ef39%3A0x530bbdb81dfe9ec8!2z0YPQuy4g0J_QvtGA0L7RhdC-0LLQsNGPLCAyMCwg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNzkwMDA!5e0!3m2!1sru!2spl!4v1586361961502!5m2!1sru!2spl"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form__body">
+                    <div class="form__body-background">
+                        <p class="title-h2 form__title-h2--c-black">У вас возникли вопросы?
+                            <span class="break">Мы с удовольствием ответим!</span></p>
+                        <p class="description form__description">Сьогодні такі карнизи – це розповсюджений та зручний
+                            спосіб управління
+                            великими та досить важкими шторами. Варіанти управління дозволяють вибрати саме те, що Вам
+                            потрібно...</p>
+                        <form action="#" class="form__form-ask form-ask">
+                            <input data-wow-delay=".2s" type="text" name="name" placeholder="Ваше имя"
+                                   class="wow fadeIn input-item-1">
+                            <input data-wow-delay=".5s" type="email" name="email" placeholder="Ваш email"
+                                   class="wow fadeIn  input-item-2">
+                            <textarea data-wow-delay=".8s" name="message" placeholder="Сообщение"
+                                      class="wow fadeIn "></textarea>
+                            <button type="submit" class="btn-default btn-default--center wow fadeIn ">Отправить</button>
+                        </form>
+
+                        <div class="line-orange"></div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <div class="workspace__footer">
+            {% include "html/footer.html" %}
+        </div>
+
+
+    </div>
+</div>
+
+{% include "html/_document-footer.html" %}

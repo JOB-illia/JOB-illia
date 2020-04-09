@@ -1,0 +1,101 @@
+.contact {
+  padding: 0 15px;
+  margin: 0 auto;
+  @include container($mW: $wrap-content);
+
+}
+.first-screen-default {
+  position: relative;
+  overflow: hidden;
+  height: 364px;
+  clip-path: polygon(5.5% 0, 100% 0, 100% 86%, 95% 100%, 0 100%, 0% 60%, 0 14%);
+  &::before{
+    content: '';
+    width: calc(100%);
+    height: 100%;
+    @include full-abs();
+    right: auto;
+    background: rgba(0,0,0, 0.5);
+    z-index: 9;
+  }
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 1;
+  }
+  &__container {
+    position: relative;
+    z-index: 999;
+    width: calc(100% - (26px + 18px));
+    height: calc(100% - 45px);
+    margin: 25px 18px 20px 26px;
+    border: 1px solid rgba(255,255,255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__crumbs {
+    position: relative;
+    z-index: 99;
+    margin-left: 37px;
+    margin-top: 58px;
+    @include flc-start();
+    > a {
+      text-decoration: none;
+      color: rgba(255,255,255, 0.5);
+      font-size: rem(14);
+      line-height: rem(28);
+      &:last-child {
+        font-weight: 500;
+        color: $c-white;
+      }
+    }
+    span {
+      color: rgba(255,255,255, 0.5);
+      margin: 0 10px;
+    }
+  }
+  &__title-h1 {
+    position: relative;
+    z-index: 999;
+    color: $c-white;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: rem(28);
+    margin-bottom: 43px;
+    margin-left: 37px;
+  }
+}
+@include mmax($width: 539){
+  .first-screen-default{
+    height: 264px;
+  }
+  .first-screen-default__crumbs {
+    margin-top: 10px;
+  }
+}
+@include mmax($width: 414){
+  .contact {
+    padding: 0;
+  }
+  .first-screen-default__crumbs {
+    margin-left: 10px;
+  }
+  .first-screen-default__title-h1{
+    margin-left: 10px;
+  }
+  .first-screen-default{
+    clip-path: none;
+  }
+  .first-screen-default__container {
+    margin: 20px auto;
+    width: calc(100% - 20px);
+
+
+  }
+}

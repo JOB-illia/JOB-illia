@@ -1,0 +1,51 @@
+.client-artica {
+  @include container($mW: $wrap-content);
+  padding: 0 15px;
+
+  &__title-h2 {
+    margin-bottom: 67px;
+    margin-top: 50px;
+    color: $c-black;
+    display: block;
+    flex-basis: 100%;
+  }
+  &__box {
+    @include container($mW: $wrap-content-mini);
+    @include space-between();
+  }
+  &__box-logo {
+    margin-bottom: 54px;
+    img {
+      @include adapt-img();
+    }
+  }
+}
+@include mmax(428){
+  .client-artica{
+    padding: 0;
+  }
+  .first-screen-default__title-h1{
+    margin-left: 10px;
+  }
+  .first-screen-default__crumbs{
+    margin-left: 10px;
+  }
+  .client-artica__title-h2{
+    text-align: center;
+  }
+  .client-artica__box{
+    padding: 0 15px;
+  }
+  .first-screen-default__title-h1{
+    font-size: rem(28);
+  }
+}
+@include mmax(330){
+  .client-artica__box-logo  {
+    flex-basis: 100%;
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

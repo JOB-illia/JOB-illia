@@ -150,3 +150,8 @@
     }
   }
 }
+@include mmax($width: 352){
+  .product-first__slider-item{
+    margin: 10px!important;
+  }
+}
