@@ -33,5 +33,12 @@ $(document).ready(function () {
        $(this).toggleClass('mobile-plus-hidden--open');
        $(this).parent().next().slideToggle();
     });
+    $('.modal-cause--click').on('click', function (e) {
+        e.preventDefault();
+        $('.modal-cause__open').slideToggle().css('display', 'flex');
+    });
+    $('.modal-cause__close').on('click', function () {
+        $('.modal-cause__open').slideToggle();
+    });
 
 });

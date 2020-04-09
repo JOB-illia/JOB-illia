@@ -109,3 +109,11 @@
     margin: 0px 0;
   }
 }
+@include mmax(414){
+  .portfolio .portfolio__row .portfolio__row-wrap{
+    max-width: calc(100% - 30px);
+  }
+  .portfolio{
+    padding: 0;
+  }
+}

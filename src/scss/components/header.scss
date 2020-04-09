@@ -617,4 +617,8 @@
     justify-content: center;
     flex-basis: 100%;
   }
+  .header .header__wrap .header__row .header__contact > p, .header .header__wrap .header__row .header__contact > a{
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
 }

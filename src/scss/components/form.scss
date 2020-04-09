@@ -160,4 +160,17 @@
     padding: 0 15px;
     width: calc(100% - 30px);
   }
+  .form-ask input, .form-ask textarea{
+    width: calc(100% - 30px);
+    margin-left: 0!important;
+    margin-right: auto;
+  }
+  .form__body-background{
+    padding: 30px 15px;
+  }
+  .form-ask .btn-default--center{
+    width: calc(100% - 30px);
+    margin-left: 0!important;
+    margin-right: auto;
+  }
 }
